@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin-Panel | Unify Wizards</title>
+    <link rel="icon" href="" type="image/x-icon" />
+    <link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@400;500;600;700&amp;display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="Assets/css/fonts/phosphor/duotone/style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="Assets/css/fonts/material.css" />
+    <link rel="stylesheet" href="Assets/css/fonts/tabler-icons.min.css">
+    <link rel="stylesheet" href="Assets/css/style.css">
+    <link rel="stylesheet" href="Assets/css/Utility.css">
+    <script src="https://www.gstatic.com/charts/loader.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+
+<body data-pc-preset="preset-1" data-pc-sidebar-theme="light" data-pc-sidebar-caption="true" data-pc-direction="ltr"
+    data-pc-theme="light">
+    <nav class="pc-sidebar">
+        <div class="navbar-wrapper">
+            <div class="m-header">
+                <a href="index.html" class="b-brand text-primary">
+                    <img src="Assets/Images/logo.png" alt="" class="logo-lg" />
+                </a>
+            </div>
+            <div class="navbar-content">
+                <ul class="pc-navbar">
+                    <hr class="whitee">
+                    <li class="pc-item pc-hasmenu">
+                        <a href="index.html" class="pc-link">
+                            <span class="pc-micon">
+                                <i class="ph-duotone ph-gauge"></i>
+                            </span>
+                            <span class="pc-mtext">Dashboard</span>
+                        </a>
+                    </li>
+                    <li class="pc-item">
+                        <a href="index2.html" class="pc-link">
+                            <span class="pc-micon">
+                                <i class="ph-duotone ph-list"></i>
+                            </span>
+                            <span class="pc-mtext">Data</span>
+                        </a>
+                    </li>
+                    <li class="pc-item">
+                        <a href="index3.html" class="pc-link">
+                            <span class="pc-micon">
+                                <i class="ph-duotone ph-check-circle"></i>
+                            </span>
+                            <span class="pc-mtext">manage Plan</span>
+                        </a>
+                    </li>
+                    <li class="pc-item">
+                        <a href="index4.html" class="pc-link">
+                            <span class="pc-micon">
+                                <i class="ph-duotone ph-folder"></i>
+                            </span>
+                            <span class="pc-mtext">Form</span>
+                        </a>
+                    </li>  </li>  <li class="pc-item">
+                        <a href="index5.html" class="pc-link">
+                            <span class="pc-micon">
+                                <i class="ph-duotone ph-folder"></i>
+                            </span>
+                            <span class="pc-mtext">Form2</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="card pc-user-card">
+                <div class="card-body">
+                    <div class="d-flex align-items-center">
+                        <div class="flex-shrink-0">
+                            <img src="Assets/images/user/avatar-1.jpg" alt="user-image"
+                                class="user-avtar wid-45 rounded-circle" />
+                        </div>
+                        <div class="flex-grow-1 ms-3">
+                            <div class="dropdown">
+                                <a href="#" class="arroww-none dropdowwn-toggle" data-bs-toggle="dropdown"
+                                    aria-expanded="false" data-bs-offset="0,20">
+                                    <div class="d-flex align-items-center">
+                                        <div class="flex-grow-1 me-2">
+                                            <h6 class="mb-0">Ayush</h6>
+                                            <small>Administrator</small>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- [ Sidebar Menu ] end -->
+    <!-- [ Header Topbar ] start -->
+    <header class="pc-header">
+        <div class="header-wrapper">
+            <!-- [Mobile Media Block] start -->
+            <div class="me-auto pc-mob-drp">
+                <ul class="list-unstyled">
+                    <!-- ======= Menu collapse Icon ===== -->
+                    <li class="pc-h-item pc-sidebar-collapse">
+                        <a href="#" class="pc-head-link ms-0" id="sidebar-hide">
+                            <i class="ti ti-menu-2"></i>
+                        </a>
+                    </li>
+                    <li class="pc-h-item pc-sidebar-popup">
+                        <a href="#" class="pc-head-link ms-0" id="mobile-collapse">
+                            <i class="ti ti-menu-2"></i>
+                        </a>
+                    </li>
+                    <li class="dropdown pc-h-item d-inline-flex d-md-none">
+                        <a class="pc-head-link dropdown-toggle arrow-none m-0" data-bs-toggle="dropdown" href="#"
+                            role="button" aria-haspopup="false" aria-expanded="false">
+                            <i class="ph-duotone ph-magnifying-glass"></i>
+                        </a>
+                        <div class="dropdown-menu pc-h-dropdown drp-search">
+                            <form class="px-3">
+                                <div class="mb-0 d-flex align-items-center">
+                                    <input type="search" class="form-control border-0 shadow-none"
+                                        placeholder="Search..." />
+                                    <button class="btn btn-light-secondary btn-search">Search</button>
+                                </div>
+                            </form>
+                        </div>
+                    </li>
+                    <li class="pc-h-item d-none d-md-inline-flex">
+                        <form class="form-search">
+                            <i class="ph-duotone ph-magnifying-glass icon-search"></i>
+                            <input type="search" class="form-control" placeholder="Search..." />
+                            <button class="btn btn-search" style="padding: 0"><kbd>ctrl+k</kbd></button>
+                        </form>
+                    </li>
+                </ul>
+            </div>
+            </li>
+            </ul>
+        </div>
+        <!-- [Mobile Media Block end] -->
+        <div class="ms-auto">
+            <ul class="list-unstyled">
+                <li class="dropdown pc-h-item">
+                    <a class="pc-head-link dropdown-toggle arrow-none me-0" data-bs-toggle="dropdown" href="#"
+                        role="button" aria-haspopup="false" aria-expanded="false">
+                        <i class="ph-duotone ph-diamonds-four"></i>
+                    </a>
+                    <div class="dropdown-menu dropdown-menu-end pc-h-dropdown">
+                        <a href="#!" class="dropdown-item">
+                            <i class="ph-duotone ph-user"></i>
+                            <span>My Account</span>
+                        </a>
+                        <a href="#!" class="dropdown-item">
+                            <i class="ph-duotone ph-gear"></i>
+                            <span>Settings</span>
+                        </a>
+                        <a href="#!" class="dropdown-item">
+                            <i class="ph-duotone ph-lifebuoy"></i>
+                            <span>Support</span>
+                        </a>
+                        <a href="#!" class="dropdown-item">
+                            <i class="ph-duotone ph-lock-key"></i>
+                            <span>Lock Screen</span>
+                        </a>
+                        <a href="#!" class="dropdown-item">
+                            <i class="ph-duotone ph-power"></i>
+                            <span>Logout</span>
+                        </a>
+                    </div>
+                </li>
+                <li class="dropdown pc-h-item header-user-profile">
+                    <a class="pc-head-link dropdown-toggle arrow-none me-0" data-bs-toggle="dropdown" href="#"
+                        role="button" aria-haspopup="false" data-bs-auto-close="outside" aria-expanded="false">
+                        <img src="Assets/images/user/avatar-2.jpg" alt="user-image" class="user-avtar" />
+                    </a>
+                    <div class="dropdown-menu dropdown-user-profile dropdown-menu-end pc-h-dropdown">
+                        <div class="dropdown-header d-flex align-items-center justify-content-between">
+                            <h5 class="m-0">Profile</h5>
+                        </div>
+                        <div class="dropdown-body">
+                            <div class="profile-notification-scroll position-relative"
+                                style="max-height: calc(100vh - 225px)">
+                                <ul class="list-group list-group-flush w-100">
+                                    <li class="list-group-item">
+                                        <div class="d-flex align-items-center">
+                                            <div class="flex-shrink-0">
+                                                <img src="Assets/images/user/avatar-2.jpg" alt="user-image"
+                                                    class="wid-50 rounded-circle" />
+                                            </div>
+                                            <div class="flex-grow-1 mx-3">
+                                                <h5 class="mb-0">User</h5>
+                                                <a class="link-primary"
+                                                    href="mailto:user@company.io">user@company.io</a>
+                                            </div>
+                                            <!-- <span class="badge bg-primary">PRO</span> -->
+                                        </div>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <a href="#" class="dropdown-item">
+                                            <span class="d-flex align-items-center">
+                                                <i class="ph-duotone ph-key"></i>
+                                                <span>Change password</span>
+                                            </span>
+                                        </a>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <a href="#" class="dropdown-item">
+                                            <span class="d-flex align-items-center">
+                                                <i class="ph-duotone ph-user-circle"></i>
+                                                <span>Edit profile</span>
+                                            </span>
+                                        </a>
+                                        <a href="#" class="dropdown-item">
+                                            <span class="d-flex align-items-center">
+                                                <i class="ph-duotone ph-star text-warning"></i>
+                                                <span>Upgrade account</span>
+                                                <span
+                                                    class="badge bg-light-success border border-success ms-2">NEW</span>
+                                            </span>
+                                        </a>
+                                        <a href="#" class="dropdown-item">
+                                            <span class="d-flex align-items-center">
+                                                <i class="ph-duotone ph-bell"></i>
+                                                <span>Notifications</span>
+                                            </span>
+                                        </a>
+                                        <a href="#" class="dropdown-item">
+                                            <span class="d-flex align-items-center">
+                                                <i class="ph-duotone ph-gear-six"></i>
+                                                <span>Settings</span>
+                                            </span>
+                                        </a>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <a href="#" class="dropdown-item">
+                                            <span class="d-flex align-items-center">
+                                                <i class="ph-duotone ph-plus-circle"></i>
+                                                <span>Add account</span>
+                                            </span>
+                                        </a>
+                                        <a href="#" class="dropdown-item">
+                                            <span class="d-flex align-items-center">
+                                                <i class="ph-duotone ph-power"></i>
+                                                <span>Logout</span>
+                                            </span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        </div>
+    </header>
+    <div class="pc-container">
+        <div class="pc-content">
+            <!-- [ breadcrumb ] start -->
+            <div class="page-header">
+                <div class="page-block">
+                    <div class="row align-items-center">
+                        <div class="col-md-12">
+                            <ul class="breadcrumb">
+                                <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                                <li class="breadcrumb-item"><a href="javascript: void(0)">Dashboard</a></li>
+                                <li class="breadcrumb-item" aria-current="page">Home</li>
+                            </ul>
+                        </div>
+                        <div class="col-md-12">
+                            <div class="page-header-title">
+                                <!-- <h2 class="mb-0">TITLE MERE BHAI IDHR AAYEGA</h2> -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- [ breadcrumb ] end -->
+            <!-- [ Main Content ] start -->
+            <div class="container">
+                <div class="row">
+                    <div class="col-12" id="chartContainer">
+                        <canvas class="card" id="myChart"></canvas>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12">
+                        <div class="panel">
+                            <div class="item total-users">
+                                <div class="text">
+                                    <i class="icon fas fa-users"></i>
+                                    <span class="label">Total Users</span>
+                                </div>
+                                <span class="value">160</span>
+                            </div>
+                            <div class="item total-orders">
+                                <div class="text">
+                                    <i class="icon fas fa-dollar-sign"></i>
+                                    <span class="label">Total Orders</span>
+                                </div>
+                                <span class="value">54</span>
+                            </div>
+                            <div class="item total-leads">
+                                <div class="text">
+                                    <i class="icon fas fa-calendar-alt"></i>
+                                    <span class="label">Total Leads</span>
+                                </div>
+                                <span class="value">26</span>
+                            </div>
+                            <div class="item total-instances">
+                                <div class="text">
+                                    <i class="icon fab fa-whatsapp"></i>
+                                    <span class="label">Total Instance(s)</span>
+                                </div>
+                                <span class="value">6</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="Assets/Js/popper.min.js"></script>
+    <script src="Assets/Js/simplebar.min.js"></script>
+    <script src="Assets/Js/bootstrap.js"></script>
+    <script src="Assets/Js/custom-font.js"></script>
+    <script src="Assets/Js/style.js"></script>
+    <script src="Assets/Js/feather.min.js"></script>
+    <script src="Assets/js/chart.js"></script>
+</body>
+
+</html>
